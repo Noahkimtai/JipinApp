@@ -1,0 +1,16 @@
+{
+  "userLocations": [
+    {
+      "id": 0,
+      "latitude": -1.2802,
+      "longitude": 36.8346,
+      "name": ""
+    },
+    {
+      "name": "NBO",
+      "latitude": -1.2713984,
+      "longitude": 36.8345088,
+      "id": 1
+    }
+  ]
+}
