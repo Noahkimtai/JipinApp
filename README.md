@@ -1,1 +1,16 @@
 # phase1_project
+This is an app that allows the user to map his/her current location using OpenStreetMap API. It then displays the users location information on the page and sends the data to the server for future use.
+
+## Project user stories (at least 3) (i.e As a user what can I do with your site/ app)
+*
+1. As a user I should be able to access the coordinates of my location 
+1. As a user I should be able to display my current location on the webpage
+1. As a user I should be able to save my location to the server
+1. As a user I should be able to see all my previously saved locations
+
+## PROJECT MVP (Minimum Viable product i.e features the app should have.  Minimum features should be 3-6 )
+1. The app should pick the location of the user
+1. The app should display the current location of the user
+1. The app should send the location of the user to the 'server'
+
+### OpenStreetMap API used
