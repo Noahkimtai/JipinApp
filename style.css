@@ -3,9 +3,12 @@ body {
     margin: 0;
 }
 html, body, #map {
-    height: 90%;
+    height: 100%;
     width: 100%;
 }
-#user-data {
-    height: 10%; 
+ #user-data {
+    background-color:grey; 
+}
+button{
+    padding: 5px 5px 5px 5px;
 }
