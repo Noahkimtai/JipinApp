@@ -6,7 +6,7 @@ let userLocationCoordinates ={
 };
 document.addEventListener('DOMContentLoaded',getLocation()
 )
-setTimeout(OpenStreetMapLayer(),100)
+setTimeout(OpenStreetMapLayer(),2000)
 function OpenStreetMapLayer(){
     //Let the map be loaded once the 
     let map =L.map('map')// to innitialize the map on our page
@@ -19,8 +19,6 @@ function OpenStreetMapLayer(){
     ', Tiles courtesy of <a href="https://geo6.be/">GEO-6</a>',
     maxZoom:12
     }).addTo(map)
-
-
     //create a marker on current user's location
     let marker= L.marker([userLocationCoordinates['latitude'],userLocationCoordinates['longitude']]).addTo(map);
     // add popup to the marker
@@ -30,7 +28,6 @@ function OpenStreetMapLayer(){
     let pinLocation = document.querySelector('#pin-location-button')
     pinLocation.addEventListener('click', e=>getLocation(e))
 }
-
 function getLocation(){
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(success, error);// function for getting the user location
@@ -51,7 +48,6 @@ function getLocation(){
       };
     console.log(`${userLocationCoordinates.latitude} outside positionn`)
 };
-
 //Button that store the user location
 let bookMarkLocation = document.querySelector('#submi-location')
 bookMarkLocation.addEventListener('click',e=>captureUserLocation(e))
@@ -68,12 +64,11 @@ function captureUserLocation(e){
     label.innerText ='Location Name'
     nameInput.id ='searchName'
     nameInput.type="text"
-    nameInput.placeholder="location name"
+    nameInput.placeholder=" Enter location name"
     form.appendChild(label)
     form.appendChild(nameInput)
     form.appendChild(submit)
     document.querySelector('#user-data').appendChild(form)
-
     // then add event listener to the form
     // Take the passed name and pass it to the name property in the userlocation object
     form.addEventListener('submit',e=>{
@@ -88,7 +83,6 @@ function captureUserLocation(e){
         body:JSON.stringify(userLocationCoordinates)
     }).then(alert('Your location BookMarked'))
 }
-
 // write code that will enable the user to search location by name
 let trail = document.querySelector('#trail')
 // add eventListener
