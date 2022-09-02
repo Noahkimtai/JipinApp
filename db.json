@@ -29,6 +29,18 @@
       "latitude": -1.2713984,
       "longitude": 36.8345088,
       "id": 4
+    },
+    {
+      "name": "NBO",
+      "latitude": -1.261568,
+      "longitude": 36.7558656,
+      "id": 5
+    },
+    {
+      "name": "NBO",
+      "latitude": -1.261568,
+      "longitude": 36.7558656,
+      "id": 6
     }
   ]
 }

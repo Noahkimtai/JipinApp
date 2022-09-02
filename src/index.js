@@ -6,6 +6,7 @@ let userLocationCoordinates ={
 };
 document.addEventListener('DOMContentLoaded',getLocation()
 )
+setTimeout(OpenStreetMapLayer(),100)
 function OpenStreetMapLayer(){
     //Let the map be loaded once the 
     let map =L.map('map')// to innitialize the map on our page
@@ -29,7 +30,6 @@ function OpenStreetMapLayer(){
     let pinLocation = document.querySelector('#pin-location-button')
     pinLocation.addEventListener('click', e=>getLocation(e))
 }
-setTimeout(OpenStreetMapLayer(),100)
 
 function getLocation(){
     if (navigator.geolocation) {
@@ -61,10 +61,15 @@ function captureUserLocation(e){
     let form = document.createElement('form')
     let nameInput = document.createElement('input')
     let submit = document.createElement('input')
+    let label = document.createElement('label')
     submit.type="submit" 
     submit.value="Submit"
+    label.for ='searchName'
+    label.innerText ='Location Name'
+    nameInput.id ='searchName'
     nameInput.type="text"
-    nameInput.name="location name"
+    nameInput.placeholder="location name"
+    form.appendChild(label)
     form.appendChild(nameInput)
     form.appendChild(submit)
     document.querySelector('#user-data').appendChild(form)
