@@ -1,5 +1,12 @@
 # phase1_project
-This is an app that allows the user to map his/her current location using OpenStreetMap API. It then displays the users location information on the page and sends the data to the server for future use.
+## Project Details:
+1. project or program name - Simple Geolocation Web App
+1. author name - Noah Kimutai Chepkwony
+1. link to live site on GitHub Pages - https://noahkimtai.github.io/
+1. copyright and license information.This project is free to use and modify [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+## description of project.
+This is an app that allows the user to map his/her current location using OpenStreetMap API. It then displays the users location information on the page and sends the data to the server for future use. This app is useful if you are in a new place and would like to view it on a map. Additionally if you like the place you can bookmark it for future reference.
 
 ## Project user stories (at least 3) (i.e As a user what can I do with your site/ app)
 *
@@ -13,4 +20,6 @@ This is an app that allows the user to map his/her current location using OpenSt
 1. The app should display the current location of the user
 1. The app should send the location of the user to the 'server'
 
-### OpenStreetMap API used
+## Resources used
+1. OpenStreetMap API
+1. Geolocation API
